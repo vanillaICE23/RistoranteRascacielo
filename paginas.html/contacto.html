@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rascacielo Ristorante | Carne Argentina</title>
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <!--LINK FONTAWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--LINK EMAILJS-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("OT-IMbF4_L3wFrnyL");
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="../inicio.html">
+          <img src="../IMAGES/logo.jpg" alt="logotipo de la marca" />
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="menu.html">MENÚ</a></li>
+          <li><a href="cocktails.html">COCKTAILS</a></li>
+          <li><a href="https://meitre.com/es" target="_blank">RESERVAS</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container-form">
+        <div class="info-form">
+          <h2>Contactanos</h2>
+          
+          <a href="#"><i class="fa fa-phone"></i>213-456-789</a>
+          <a href="#"><i class="fa fa-envelope"></i>email@tudominio.com</a>
+          <a href="#"><i class="fa fa-map-marked"></i>Ciudad, Paris</a>
+        </div>
+        <form id="form">
+            <div class="field">
+              <label for="from_name">Nombre*</label>
+              <input type="text" required name="from_name" id="from_name">
+            </div>
+            <div class="field">
+                <label for="email_id">Correo electronico *</label>
+                <input type="text" required name="email_id" id="email_id">
+              </div>
+            <div class="field">
+              <label for="message">Mensaje</label>
+              <input type="text" name="message" id="message">
+            </div>
+            
+          
+            <input type="submit" id="button" value="Enviar" >
+          </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>
+          Copyright 2023 Rascacielo Ristorante - Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+    <script src="/JS/funcionalidades.js"></script>
+  </body>
+</html>
